@@ -1,0 +1,805 @@
+2013/11/22 23:22:43 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "CUrlManager.scriptName".' in Z:\home\yiiblog\framework\base\CComponent.php:173
+Stack trace:
+#0 Z:\home\yiiblog\framework\YiiBase.php(220): CComponent->__set('scriptName', false)
+#1 Z:\home\yiiblog\framework\base\CModule.php(386): YiiBase::createComponent(Array)
+#2 Z:\home\yiiblog\framework\base\CApplication.php(510): CModule->getComponent('urlManager')
+#3 Z:\home\yiiblog\framework\web\CWebApplication.php(140): CApplication->getUrlManager()
+#4 Z:\home\yiiblog\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 Z:\home\yiiblog\www\index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/index.php/site/login
+HTTP_REFERER=http://yiiblog/index.php/site/contact
+---
+2013/11/22 23:32:04 [error] [exception.CException] exception 'CException' with message 'В классе Bootstrap и его поведениях не найден метод или замыкание с именем "register".' in Z:\home\yiiblog\framework\base\CComponent.php:265
+Stack trace:
+#0 Z:\home\yiiblog\www\themes\bootstrap\views\layouts\main.php(13): CComponent->__call('register', Array)
+#1 Z:\home\yiiblog\www\themes\bootstrap\views\layouts\main.php(13): Bootstrap->register()
+#2 Z:\home\yiiblog\framework\web\CBaseController.php(126): require('Z:\home\yiiblog...')
+#3 Z:\home\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\yiiblog...', Array, true)
+#4 Z:\home\yiiblog\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('Z:\home\yiiblog...', Array, true)
+#5 Z:\home\yiiblog\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#6 Z:\home\yiiblog\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#7 Z:\home\yiiblog\framework\web\CBaseController.php(206): COutputProcessor->run()
+#8 Z:\home\yiiblog\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#9 Z:\home\yiiblog\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#10 Z:\home\yiiblog\framework\web\CBaseController.php(126): require('Z:\home\yiiblog...')
+#11 Z:\home\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\yiiblog...', Array, true)
+#12 Z:\home\yiiblog\framework\web\CController.php(784): CBaseController->renderFile('Z:\home\yiiblog...', Array, true)
+#13 Z:\home\yiiblog\protected\controllers\SiteController.php(32): CController->render('index')
+#14 Z:\home\yiiblog\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#15 Z:\home\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 Z:\home\yiiblog\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 Z:\home\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 Z:\home\yiiblog\framework\web\CWebApplication.php(282): CController->run('index')
+#19 Z:\home\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#20 Z:\home\yiiblog\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#21 Z:\home\yiiblog\www\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/site/index
+HTTP_REFERER=http://yiiblog/site/page?view=about
+---
+2013/11/22 23:34:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "images/favicon.ico".' in Z:\home\yiiblog\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('images/favicon....')
+#1 Z:\home\yiiblog\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 Z:\home\yiiblog\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/favicon.ico
+---
+2013/11/22 23:47:21 [error] [exception.CException] exception 'CException' with message 'В классе Bootstrap и его поведениях не найден метод или замыкание с именем "register".' in Z:\home\yiiblog\framework\base\CComponent.php:265
+Stack trace:
+#0 Z:\home\yiiblog\www\themes\bootstrap\views\layouts\main.php(12): CComponent->__call('register', Array)
+#1 Z:\home\yiiblog\www\themes\bootstrap\views\layouts\main.php(12): Bootstrap->register()
+#2 Z:\home\yiiblog\framework\web\CBaseController.php(126): require('Z:\home\yiiblog...')
+#3 Z:\home\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\yiiblog...', Array, true)
+#4 Z:\home\yiiblog\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('Z:\home\yiiblog...', Array, true)
+#5 Z:\home\yiiblog\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#6 Z:\home\yiiblog\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#7 Z:\home\yiiblog\framework\web\CBaseController.php(206): COutputProcessor->run()
+#8 Z:\home\yiiblog\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#9 Z:\home\yiiblog\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#10 Z:\home\yiiblog\framework\web\CBaseController.php(126): require('Z:\home\yiiblog...')
+#11 Z:\home\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\yiiblog...', Array, true)
+#12 Z:\home\yiiblog\framework\web\CController.php(784): CBaseController->renderFile('Z:\home\yiiblog...', Array, true)
+#13 Z:\home\yiiblog\protected\controllers\SiteController.php(32): CController->render('index')
+#14 Z:\home\yiiblog\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#15 Z:\home\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 Z:\home\yiiblog\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 Z:\home\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 Z:\home\yiiblog\framework\web\CWebApplication.php(282): CController->run('index')
+#19 Z:\home\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#20 Z:\home\yiiblog\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#21 Z:\home\yiiblog\www\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/site/index
+HTTP_REFERER=http://yiiblog/
+---
+2013/11/23 08:43:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "referral".' in Z:\home\yiiblog\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('referral')
+#1 Z:\home\yiiblog\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 Z:\home\yiiblog\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=referral
+---
+2013/11/23 08:43:56 [error] [exception.CException] exception 'CException' with message 'Контроллер DefaultController не может найти представление "index".' in Z:\home\yiiblog\framework\web\CController.php:878
+Stack trace:
+#0 Z:\home\yiiblog\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#1 Z:\home\yiiblog\protected\modules\referral\controllers\DefaultController.php(7): CController->render('index')
+#2 Z:\home\yiiblog\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#3 Z:\home\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 Z:\home\yiiblog\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 Z:\home\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 Z:\home\yiiblog\framework\web\CWebApplication.php(282): CController->run('')
+#7 Z:\home\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('referral')
+#8 Z:\home\yiiblog\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 Z:\home\yiiblog\www\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php?r=referral
+---
+2013/11/23 08:47:53 [error] [exception.CException] exception 'CException' with message 'TbInput: Failed to initialize widget! Model is not set.' in Z:\home\yiiblog\protected\extensions\booster\widgets\input\TbInput.php:148
+Stack trace:
+#0 Z:\home\yiiblog\framework\web\CBaseController.php(147): TbInput->init()
+#1 Z:\home\yiiblog\framework\web\CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#2 Z:\home\yiiblog\protected\extensions\booster\widgets\TbActiveForm.php(1153): CBaseController->widget('bootstrap.widge...', Array)
+#3 Z:\home\yiiblog\protected\extensions\booster\widgets\TbActiveForm.php(300): TbActiveForm->inputRow('text', NULL, 'username', NULL, Array)
+#4 Z:\home\yiiblog\www\themes\bootstrap\views\referral\login\index.php(29): TbActiveForm->textFieldRow(NULL, 'username')
+#5 Z:\home\yiiblog\framework\web\CBaseController.php(126): require('Z:\home\yiiblog...')
+#6 Z:\home\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\yiiblog...', NULL, true)
+#7 Z:\home\yiiblog\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\yiiblog...', NULL, true)
+#8 Z:\home\yiiblog\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#9 Z:\home\yiiblog\protected\modules\referral\controllers\LoginController.php(7): CController->render('index')
+#10 Z:\home\yiiblog\framework\web\actions\CInlineAction.php(49): LoginController->actionIndex()
+#11 Z:\home\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 Z:\home\yiiblog\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 Z:\home\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 Z:\home\yiiblog\framework\web\CWebApplication.php(282): CController->run('')
+#15 Z:\home\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('referral/login')
+#16 Z:\home\yiiblog\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 Z:\home\yiiblog\www\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php?r=referral/login
+---
+2013/11/23 08:49:16 [error] [exception.CException] exception 'CException' with message 'TbInput: Failed to initialize widget! Model is not set.' in Z:\home\yiiblog\protected\extensions\booster\widgets\input\TbInput.php:148
+Stack trace:
+#0 Z:\home\yiiblog\framework\web\CBaseController.php(147): TbInput->init()
+#1 Z:\home\yiiblog\framework\web\CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#2 Z:\home\yiiblog\protected\extensions\booster\widgets\TbActiveForm.php(1153): CBaseController->widget('bootstrap.widge...', Array)
+#3 Z:\home\yiiblog\protected\extensions\booster\widgets\TbActiveForm.php(300): TbActiveForm->inputRow('text', NULL, 'username', NULL, Array)
+#4 Z:\home\yiiblog\www\themes\bootstrap\views\referral\login\index.php(29): TbActiveForm->textFieldRow(NULL, 'username')
+#5 Z:\home\yiiblog\framework\web\CBaseController.php(126): require('Z:\home\yiiblog...')
+#6 Z:\home\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\yiiblog...', NULL, true)
+#7 Z:\home\yiiblog\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\yiiblog...', NULL, true)
+#8 Z:\home\yiiblog\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#9 Z:\home\yiiblog\protected\modules\referral\controllers\LoginController.php(7): CController->render('index')
+#10 Z:\home\yiiblog\framework\web\actions\CInlineAction.php(49): LoginController->actionIndex()
+#11 Z:\home\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 Z:\home\yiiblog\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 Z:\home\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 Z:\home\yiiblog\framework\web\CWebApplication.php(282): CController->run('')
+#15 Z:\home\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('referral/login')
+#16 Z:\home\yiiblog\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 Z:\home\yiiblog\www\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php?r=referral/login
+---
+2013/11/23 08:49:17 [error] [exception.CException] exception 'CException' with message 'TbInput: Failed to initialize widget! Model is not set.' in Z:\home\yiiblog\protected\extensions\booster\widgets\input\TbInput.php:148
+Stack trace:
+#0 Z:\home\yiiblog\framework\web\CBaseController.php(147): TbInput->init()
+#1 Z:\home\yiiblog\framework\web\CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#2 Z:\home\yiiblog\protected\extensions\booster\widgets\TbActiveForm.php(1153): CBaseController->widget('bootstrap.widge...', Array)
+#3 Z:\home\yiiblog\protected\extensions\booster\widgets\TbActiveForm.php(300): TbActiveForm->inputRow('text', NULL, 'username', NULL, Array)
+#4 Z:\home\yiiblog\www\themes\bootstrap\views\referral\login\index.php(29): TbActiveForm->textFieldRow(NULL, 'username')
+#5 Z:\home\yiiblog\framework\web\CBaseController.php(126): require('Z:\home\yiiblog...')
+#6 Z:\home\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\yiiblog...', NULL, true)
+#7 Z:\home\yiiblog\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\yiiblog...', NULL, true)
+#8 Z:\home\yiiblog\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#9 Z:\home\yiiblog\protected\modules\referral\controllers\LoginController.php(7): CController->render('index')
+#10 Z:\home\yiiblog\framework\web\actions\CInlineAction.php(49): LoginController->actionIndex()
+#11 Z:\home\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 Z:\home\yiiblog\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 Z:\home\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 Z:\home\yiiblog\framework\web\CWebApplication.php(282): CController->run('')
+#15 Z:\home\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('referral/login')
+#16 Z:\home\yiiblog\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 Z:\home\yiiblog\www\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php?r=referral/login
+---
+2013/11/23 08:49:18 [error] [exception.CException] exception 'CException' with message 'TbInput: Failed to initialize widget! Model is not set.' in Z:\home\yiiblog\protected\extensions\booster\widgets\input\TbInput.php:148
+Stack trace:
+#0 Z:\home\yiiblog\framework\web\CBaseController.php(147): TbInput->init()
+#1 Z:\home\yiiblog\framework\web\CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#2 Z:\home\yiiblog\protected\extensions\booster\widgets\TbActiveForm.php(1153): CBaseController->widget('bootstrap.widge...', Array)
+#3 Z:\home\yiiblog\protected\extensions\booster\widgets\TbActiveForm.php(300): TbActiveForm->inputRow('text', NULL, 'username', NULL, Array)
+#4 Z:\home\yiiblog\www\themes\bootstrap\views\referral\login\index.php(29): TbActiveForm->textFieldRow(NULL, 'username')
+#5 Z:\home\yiiblog\framework\web\CBaseController.php(126): require('Z:\home\yiiblog...')
+#6 Z:\home\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\yiiblog...', NULL, true)
+#7 Z:\home\yiiblog\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\yiiblog...', NULL, true)
+#8 Z:\home\yiiblog\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#9 Z:\home\yiiblog\protected\modules\referral\controllers\LoginController.php(7): CController->render('index')
+#10 Z:\home\yiiblog\framework\web\actions\CInlineAction.php(49): LoginController->actionIndex()
+#11 Z:\home\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 Z:\home\yiiblog\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 Z:\home\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 Z:\home\yiiblog\framework\web\CWebApplication.php(282): CController->run('')
+#15 Z:\home\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('referral/login')
+#16 Z:\home\yiiblog\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 Z:\home\yiiblog\www\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php?r=referral/login
+---
+2013/11/23 08:50:18 [error] [exception.CException] exception 'CException' with message 'Контроллер LoginController не может найти представление "login".' in Z:\home\yiiblog\framework\web\CController.php:878
+Stack trace:
+#0 Z:\home\yiiblog\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#1 Z:\home\yiiblog\protected\modules\referral\controllers\LoginController.php(34): CController->render('login', Array)
+#2 Z:\home\yiiblog\framework\web\actions\CInlineAction.php(49): LoginController->actionLogin()
+#3 Z:\home\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 Z:\home\yiiblog\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 Z:\home\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 Z:\home\yiiblog\framework\web\CWebApplication.php(282): CController->run('')
+#7 Z:\home\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('referral/login')
+#8 Z:\home\yiiblog\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 Z:\home\yiiblog\www\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php?r=referral/login
+---
+2013/11/23 08:50:22 [error] [exception.CException] exception 'CException' with message 'Контроллер LoginController не может найти представление "login".' in Z:\home\yiiblog\framework\web\CController.php:878
+Stack trace:
+#0 Z:\home\yiiblog\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#1 Z:\home\yiiblog\protected\modules\referral\controllers\LoginController.php(34): CController->render('login', Array)
+#2 Z:\home\yiiblog\framework\web\actions\CInlineAction.php(49): LoginController->actionLogin()
+#3 Z:\home\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 Z:\home\yiiblog\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 Z:\home\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 Z:\home\yiiblog\framework\web\CWebApplication.php(282): CController->run('')
+#7 Z:\home\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('referral/login')
+#8 Z:\home\yiiblog\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 Z:\home\yiiblog\www\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php?r=referral/login
+---
+2013/11/23 08:50:53 [error] [exception.CException] exception 'CException' with message 'Контроллер LoginController не может найти представление "login".' in Z:\home\yiiblog\framework\web\CController.php:878
+Stack trace:
+#0 Z:\home\yiiblog\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#1 Z:\home\yiiblog\protected\modules\referral\controllers\LoginController.php(34): CController->render('login', Array)
+#2 Z:\home\yiiblog\framework\web\actions\CInlineAction.php(49): LoginController->actionLogin()
+#3 Z:\home\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 Z:\home\yiiblog\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 Z:\home\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 Z:\home\yiiblog\framework\web\CWebApplication.php(282): CController->run('')
+#7 Z:\home\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('referral/login')
+#8 Z:\home\yiiblog\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 Z:\home\yiiblog\www\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php?r=referral/login
+---
+2013/11/23 08:50:54 [error] [exception.CException] exception 'CException' with message 'Контроллер LoginController не может найти представление "login".' in Z:\home\yiiblog\framework\web\CController.php:878
+Stack trace:
+#0 Z:\home\yiiblog\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#1 Z:\home\yiiblog\protected\modules\referral\controllers\LoginController.php(34): CController->render('login', Array)
+#2 Z:\home\yiiblog\framework\web\actions\CInlineAction.php(49): LoginController->actionLogin()
+#3 Z:\home\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 Z:\home\yiiblog\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 Z:\home\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 Z:\home\yiiblog\framework\web\CWebApplication.php(282): CController->run('')
+#7 Z:\home\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('referral/login')
+#8 Z:\home\yiiblog\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 Z:\home\yiiblog\www\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php?r=referral/login
+---
+2013/11/23 08:56:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "referral/hghg".' in Z:\home\yiiblog\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('referral/hghg')
+#1 Z:\home\yiiblog\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 Z:\home\yiiblog\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=referral/hghg
+---
+2013/11/23 09:58:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "login".' in Z:\home\yiiblog\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\yiiblog\framework\web\CController.php(270): CController->missingAction('login')
+#1 Z:\home\yiiblog\framework\web\CWebApplication.php(282): CController->run('login')
+#2 Z:\home\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#3 Z:\home\yiiblog\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 Z:\home\yiiblog\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/login
+---
+2013/11/23 09:59:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "login".' in Z:\home\yiiblog\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\yiiblog\framework\web\CController.php(270): CController->missingAction('login')
+#1 Z:\home\yiiblog\framework\web\CWebApplication.php(282): CController->run('login')
+#2 Z:\home\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#3 Z:\home\yiiblog\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 Z:\home\yiiblog\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/login
+---
+2013/11/23 13:07:40 [error] [exception.CException] exception 'CException' with message 'В классе User и его поведениях не найден метод или замыкание с именем "setReferralCounter".' in Z:\home\yiiblog\framework\base\CComponent.php:265
+Stack trace:
+#0 Z:\home\yiiblog\framework\db\ar\CActiveRecord.php(225): CComponent->__call('setReferralCoun...', Array)
+#1 Z:\home\yiiblog\protected\components\Controller.php(31): CActiveRecord->__call('setReferralCoun...', Array)
+#2 Z:\home\yiiblog\protected\components\Controller.php(31): User->setReferralCounter(Object(CHttpRequest))
+#3 Z:\home\yiiblog\framework\web\CController.php(306): Controller->beforeAction(Object(CInlineAction))
+#4 Z:\home\yiiblog\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 Z:\home\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 Z:\home\yiiblog\framework\web\CWebApplication.php(282): CController->run('')
+#7 Z:\home\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#8 Z:\home\yiiblog\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 Z:\home\yiiblog\www\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php?ref=6398a5d89dcecbbcb7ae7e1a7f5bf809
+HTTP_REFERER=http://yiiblog/index.php
+---
+2013/11/23 14:44:05 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "CWebUser.role".' in Z:\home\yiiblog\framework\base\CComponent.php:130
+Stack trace:
+#0 Z:\home\yiiblog\framework\web\auth\CWebUser.php(140): CComponent->__get('role')
+#1 Z:\home\yiiblog\www\themes\bootstrap\views\referral\dashboard\index.php(9): CWebUser->__get('role')
+#2 Z:\home\yiiblog\framework\web\CBaseController.php(126): require('Z:\home\yiiblog...')
+#3 Z:\home\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\yiiblog...', Array, true)
+#4 Z:\home\yiiblog\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\yiiblog...', Array, true)
+#5 Z:\home\yiiblog\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#6 Z:\home\yiiblog\protected\modules\referral\controllers\DashboardController.php(24): CController->render('index', Array)
+#7 Z:\home\yiiblog\framework\web\actions\CInlineAction.php(49): DashboardController->actionIndex()
+#8 Z:\home\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 Z:\home\yiiblog\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#10 Z:\home\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 Z:\home\yiiblog\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 Z:\home\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 Z:\home\yiiblog\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 Z:\home\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#15 Z:\home\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 Z:\home\yiiblog\framework\web\CWebApplication.php(282): CController->run('')
+#17 Z:\home\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('referral/dashbo...')
+#18 Z:\home\yiiblog\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#19 Z:\home\yiiblog\www\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/index.php?r=referral/dashboard
+HTTP_REFERER=http://yiiblog/index.php?r=referral/login
+---
+2013/11/23 15:06:38 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "User.userId".' in Z:\home\yiiblog\framework\base\CComponent.php:173
+Stack trace:
+#0 Z:\home\yiiblog\framework\db\ar\CActiveRecord.php(159): CComponent->__set('userId', '2')
+#1 Z:\home\yiiblog\framework\base\CModel.php(606): CActiveRecord->__set('userId', '2')
+#2 Z:\home\yiiblog\framework\web\auth\CDbAuthManager.php(97): CModel->offsetSet('userId', '2')
+#3 Z:\home\yiiblog\framework\web\auth\CDbAuthManager.php(75): CDbAuthManager->checkAccessRecursive('readOwnStatisti...', '2', Object(User), Array)
+#4 Z:\home\yiiblog\framework\web\auth\CWebUser.php(806): CDbAuthManager->checkAccess('readOwnStatisti...', '2', Object(User))
+#5 Z:\home\yiiblog\www\themes\bootstrap\views\referral\dashboard\index.php(9): CWebUser->checkAccess('readOwnStatisti...', Object(User))
+#6 Z:\home\yiiblog\framework\web\CBaseController.php(126): require('Z:\home\yiiblog...')
+#7 Z:\home\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\yiiblog...', Array, true)
+#8 Z:\home\yiiblog\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\yiiblog...', Array, true)
+#9 Z:\home\yiiblog\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#10 Z:\home\yiiblog\protected\modules\referral\controllers\DashboardController.php(38): CController->render('index', Array)
+#11 Z:\home\yiiblog\framework\web\actions\CInlineAction.php(49): DashboardController->actionIndex()
+#12 Z:\home\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 Z:\home\yiiblog\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 Z:\home\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 Z:\home\yiiblog\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 Z:\home\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 Z:\home\yiiblog\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 Z:\home\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#19 Z:\home\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 Z:\home\yiiblog\framework\web\CWebApplication.php(282): CController->run('')
+#21 Z:\home\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('referral/dashbo...')
+#22 Z:\home\yiiblog\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#23 Z:\home\yiiblog\www\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/index.php?r=referral/dashboard
+---
+2013/11/23 15:09:20 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchAll(): SQLSTATE[42S22]: Column not found: 1054 Unknown column 'userid' in 'where clause'. Выполнявшийся SQL-запрос: SELECT *
+FROM `AuthAssignment`
+WHERE userid=:userid.
+in Z:\home\yiiblog\www\index.php (13)
+2013/11/23 15:09:20 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'userid' in 'where clause'. The SQL statement executed was: SELECT *
+FROM `AuthAssignment`
+WHERE userid=:userid' in Z:\home\yiiblog\framework\db\CDbCommand.php:541
+Stack trace:
+#0 Z:\home\yiiblog\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 Z:\home\yiiblog\framework\web\auth\CDbAuthManager.php(337): CDbCommand->queryAll()
+#2 Z:\home\yiiblog\framework\web\auth\CDbAuthManager.php(74): CDbAuthManager->getAuthAssignments('2')
+#3 Z:\home\yiiblog\framework\web\auth\CWebUser.php(806): CDbAuthManager->checkAccess('admin', '2', Array)
+#4 Z:\home\yiiblog\framework\web\auth\CAccessControlFilter.php(338): CWebUser->checkAccess('admin')
+#5 Z:\home\yiiblog\framework\web\auth\CAccessControlFilter.php(276): CAccessRule->isRoleMatched(Object(CWebUser))
+#6 Z:\home\yiiblog\framework\web\auth\CAccessControlFilter.php(135): CAccessRule->isUserAllowed(Object(CWebUser), Object(DashboardController), Object(CInlineAction), '127.0.0.1', 'GET')
+#7 Z:\home\yiiblog\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#8 Z:\home\yiiblog\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 Z:\home\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 Z:\home\yiiblog\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 Z:\home\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#12 Z:\home\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 Z:\home\yiiblog\framework\web\CWebApplication.php(282): CController->run('')
+#14 Z:\home\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('referral/dashbo...')
+#15 Z:\home\yiiblog\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#16 Z:\home\yiiblog\www\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php?r=referral/dashboard
+---
+2013/11/23 15:10:08 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "User.userId".' in Z:\home\yiiblog\framework\base\CComponent.php:173
+Stack trace:
+#0 Z:\home\yiiblog\framework\db\ar\CActiveRecord.php(159): CComponent->__set('userId', '2')
+#1 Z:\home\yiiblog\framework\base\CModel.php(606): CActiveRecord->__set('userId', '2')
+#2 Z:\home\yiiblog\framework\web\auth\CDbAuthManager.php(97): CModel->offsetSet('userId', '2')
+#3 Z:\home\yiiblog\framework\web\auth\CDbAuthManager.php(75): CDbAuthManager->checkAccessRecursive('readOwnStatisti...', '2', Object(User), Array)
+#4 Z:\home\yiiblog\framework\web\auth\CWebUser.php(806): CDbAuthManager->checkAccess('readOwnStatisti...', '2', Object(User))
+#5 Z:\home\yiiblog\www\themes\bootstrap\views\referral\dashboard\index.php(9): CWebUser->checkAccess('readOwnStatisti...', Object(User))
+#6 Z:\home\yiiblog\framework\web\CBaseController.php(126): require('Z:\home\yiiblog...')
+#7 Z:\home\yiiblog\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\yiiblog...', Array, true)
+#8 Z:\home\yiiblog\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\yiiblog...', Array, true)
+#9 Z:\home\yiiblog\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#10 Z:\home\yiiblog\protected\modules\referral\controllers\DashboardController.php(38): CController->render('index', Array)
+#11 Z:\home\yiiblog\framework\web\actions\CInlineAction.php(49): DashboardController->actionIndex()
+#12 Z:\home\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 Z:\home\yiiblog\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 Z:\home\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 Z:\home\yiiblog\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 Z:\home\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 Z:\home\yiiblog\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 Z:\home\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#19 Z:\home\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 Z:\home\yiiblog\framework\web\CWebApplication.php(282): CController->run('')
+#21 Z:\home\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('referral/dashbo...')
+#22 Z:\home\yiiblog\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#23 Z:\home\yiiblog\www\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/index.php?r=referral/dashboard
+---
+2013/11/23 15:34:48 [error] [exception.CHttpException.403] exception 'CHttpException' in Z:\home\yiiblog\protected\modules\referral\controllers\DashboardController.php:24
+Stack trace:
+#0 Z:\home\yiiblog\framework\web\actions\CInlineAction.php(49): DashboardController->actionIndex()
+#1 Z:\home\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 Z:\home\yiiblog\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#3 Z:\home\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 Z:\home\yiiblog\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 Z:\home\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 Z:\home\yiiblog\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 Z:\home\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#8 Z:\home\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 Z:\home\yiiblog\framework\web\CWebApplication.php(282): CController->run('')
+#10 Z:\home\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('referral/dashbo...')
+#11 Z:\home\yiiblog\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 Z:\home\yiiblog\www\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/index.php?r=referral/dashboard&user_id=4
+HTTP_REFERER=http://yiiblog/index.php?r=referral/dashboard&user_id=2
+---
+2013/11/23 15:35:13 [error] [exception.CHttpException.403] exception 'CHttpException' in Z:\home\yiiblog\protected\modules\referral\controllers\DashboardController.php:24
+Stack trace:
+#0 Z:\home\yiiblog\framework\web\actions\CInlineAction.php(49): DashboardController->actionIndex()
+#1 Z:\home\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 Z:\home\yiiblog\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#3 Z:\home\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 Z:\home\yiiblog\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 Z:\home\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 Z:\home\yiiblog\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 Z:\home\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#8 Z:\home\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 Z:\home\yiiblog\framework\web\CWebApplication.php(282): CController->run('')
+#10 Z:\home\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('referral/dashbo...')
+#11 Z:\home\yiiblog\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 Z:\home\yiiblog\www\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/index.php?r=referral/dashboard&user_id=4
+HTTP_REFERER=http://yiiblog/index.php?r=referral/dashboard&user_id=2
+---
+2013/11/23 15:35:17 [error] [exception.CHttpException.403] exception 'CHttpException' in Z:\home\yiiblog\protected\modules\referral\controllers\DashboardController.php:24
+Stack trace:
+#0 Z:\home\yiiblog\framework\web\actions\CInlineAction.php(49): DashboardController->actionIndex()
+#1 Z:\home\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 Z:\home\yiiblog\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#3 Z:\home\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 Z:\home\yiiblog\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 Z:\home\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 Z:\home\yiiblog\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 Z:\home\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#8 Z:\home\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 Z:\home\yiiblog\framework\web\CWebApplication.php(282): CController->run('')
+#10 Z:\home\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('referral/dashbo...')
+#11 Z:\home\yiiblog\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 Z:\home\yiiblog\www\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/index.php?r=referral/dashboard&user_id=3
+HTTP_REFERER=http://yiiblog/index.php?r=referral/dashboard&user_id=2
+---
+2013/11/23 15:35:37 [error] [exception.CHttpException.403] exception 'CHttpException' in Z:\home\yiiblog\protected\modules\referral\controllers\DashboardController.php:24
+Stack trace:
+#0 Z:\home\yiiblog\framework\web\actions\CInlineAction.php(49): DashboardController->actionIndex()
+#1 Z:\home\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 Z:\home\yiiblog\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#3 Z:\home\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 Z:\home\yiiblog\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 Z:\home\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 Z:\home\yiiblog\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 Z:\home\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#8 Z:\home\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 Z:\home\yiiblog\framework\web\CWebApplication.php(282): CController->run('')
+#10 Z:\home\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('referral/dashbo...')
+#11 Z:\home\yiiblog\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 Z:\home\yiiblog\www\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/index.php?r=referral/dashboard&user_id=2
+HTTP_REFERER=http://yiiblog/index.php?r=referral/dashboard
+---
+2013/11/23 15:51:31 [error] [exception.CException] exception 'CException' with message 'В классе User и его поведениях не найден метод или замыкание с именем "getRole".' in Z:\home\yiiblog\framework\base\CComponent.php:265
+Stack trace:
+#0 Z:\home\yiiblog\framework\db\ar\CActiveRecord.php(225): CComponent->__call('getRole', Array)
+#1 Z:\home\yiiblog\protected\modules\referral\controllers\DashboardController.php(27): CActiveRecord->__call('getRole', Array)
+#2 Z:\home\yiiblog\protected\modules\referral\controllers\DashboardController.php(27): User->getRole()
+#3 Z:\home\yiiblog\framework\web\actions\CInlineAction.php(49): DashboardController->actionIndex()
+#4 Z:\home\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 Z:\home\yiiblog\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 Z:\home\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 Z:\home\yiiblog\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 Z:\home\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 Z:\home\yiiblog\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 Z:\home\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#11 Z:\home\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 Z:\home\yiiblog\framework\web\CWebApplication.php(282): CController->run('')
+#13 Z:\home\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('referral/dashbo...')
+#14 Z:\home\yiiblog\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 Z:\home\yiiblog\www\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=referral/dashboard
+HTTP_REFERER=http://yiiblog/index.php?r=referral/dashboard&user_id=3
+---
+2013/11/23 15:53:50 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "User.userId".' in Z:\home\yiiblog\framework\base\CComponent.php:173
+Stack trace:
+#0 Z:\home\yiiblog\framework\db\ar\CActiveRecord.php(159): CComponent->__set('userId', '1')
+#1 Z:\home\yiiblog\framework\base\CModel.php(606): CActiveRecord->__set('userId', '1')
+#2 Z:\home\yiiblog\framework\web\auth\CDbAuthManager.php(97): CModel->offsetSet('userId', '1')
+#3 Z:\home\yiiblog\framework\web\auth\CDbAuthManager.php(75): CDbAuthManager->checkAccessRecursive('readOwnStatisti...', '1', Object(User), Array)
+#4 Z:\home\yiiblog\framework\web\auth\CWebUser.php(806): CDbAuthManager->checkAccess('readOwnStatisti...', '1', Object(User))
+#5 Z:\home\yiiblog\protected\modules\referral\controllers\DashboardController.php(27): CWebUser->checkAccess('readOwnStatisti...', Object(User))
+#6 Z:\home\yiiblog\framework\web\actions\CInlineAction.php(49): DashboardController->actionIndex()
+#7 Z:\home\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 Z:\home\yiiblog\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 Z:\home\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 Z:\home\yiiblog\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 Z:\home\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 Z:\home\yiiblog\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 Z:\home\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#14 Z:\home\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 Z:\home\yiiblog\framework\web\CWebApplication.php(282): CController->run('')
+#16 Z:\home\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('referral/dashbo...')
+#17 Z:\home\yiiblog\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#18 Z:\home\yiiblog\www\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/index.php?r=referral/dashboard
+HTTP_REFERER=http://yiiblog/index.php?r=referral/dashboard&user_id=3
+---
+2013/11/23 15:58:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "referral/dashboard?user_id=1".' in Z:\home\yiiblog\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('referral/dashbo...')
+#1 Z:\home\yiiblog\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 Z:\home\yiiblog\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=referral/dashboard?user_id=1
+---
+2013/11/23 15:58:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "referral/dashboard?user_id=2".' in Z:\home\yiiblog\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('referral/dashbo...')
+#1 Z:\home\yiiblog\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 Z:\home\yiiblog\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=referral/dashboard?user_id=2
+---
+2013/11/23 16:01:36 [error] [php] Cannot use a scalar value as an array (Z:\home\yiiblog\framework\web\auth\CDbAuthManager.php:97)
+Stack trace:
+#0 Z:\home\yiiblog\protected\modules\referral\controllers\DashboardController.php(22): CWebUser->checkAccess()
+#1 Z:\home\yiiblog\framework\web\actions\CInlineAction.php(49): DashboardController->actionIndex()
+#2 Z:\home\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 Z:\home\yiiblog\framework\web\filters\CFilterChain.php(133): DashboardController->runAction()
+#4 Z:\home\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 Z:\home\yiiblog\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#6 Z:\home\yiiblog\framework\web\filters\CInlineFilter.php(58): DashboardController->filterAccessControl()
+#7 Z:\home\yiiblog\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#8 Z:\home\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#9 Z:\home\yiiblog\framework\web\CController.php(265): DashboardController->runActionWithFilters()
+#10 Z:\home\yiiblog\framework\web\CWebApplication.php(282): DashboardController->run()
+#11 Z:\home\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 Z:\home\yiiblog\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#13 Z:\home\yiiblog\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=referral/dashboard&user_id=2
+in Z:\home\yiiblog\protected\modules\referral\controllers\DashboardController.php (22)
+in Z:\home\yiiblog\www\index.php (13)
+2013/11/23 16:09:24 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "User.id".' in Z:\home\yiiblog\framework\base\CComponent.php:130
+Stack trace:
+#0 Z:\home\yiiblog\framework\db\ar\CActiveRecord.php(143): CComponent->__get('id')
+#1 Z:\home\yiiblog\protected\models\User.php(114): CActiveRecord->__get('id')
+#2 Z:\home\yiiblog\protected\modules\referral\controllers\DashboardController.php(29): User->getRole()
+#3 Z:\home\yiiblog\framework\web\actions\CInlineAction.php(49): DashboardController->actionIndex()
+#4 Z:\home\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 Z:\home\yiiblog\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 Z:\home\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 Z:\home\yiiblog\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 Z:\home\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 Z:\home\yiiblog\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 Z:\home\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#11 Z:\home\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 Z:\home\yiiblog\framework\web\CWebApplication.php(282): CController->run('')
+#13 Z:\home\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('referral/dashbo...')
+#14 Z:\home\yiiblog\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 Z:\home\yiiblog\www\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=referral/dashboard
+HTTP_REFERER=http://yiiblog/index.php?r=referral/login
+---
+2013/11/23 16:09:46 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "User.id".' in Z:\home\yiiblog\framework\base\CComponent.php:130
+Stack trace:
+#0 Z:\home\yiiblog\framework\db\ar\CActiveRecord.php(143): CComponent->__get('id')
+#1 Z:\home\yiiblog\protected\models\User.php(114): CActiveRecord->__get('id')
+#2 Z:\home\yiiblog\protected\modules\referral\controllers\DashboardController.php(29): User->getRole()
+#3 Z:\home\yiiblog\framework\web\actions\CInlineAction.php(49): DashboardController->actionIndex()
+#4 Z:\home\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 Z:\home\yiiblog\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 Z:\home\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 Z:\home\yiiblog\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 Z:\home\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 Z:\home\yiiblog\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 Z:\home\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#11 Z:\home\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 Z:\home\yiiblog\framework\web\CWebApplication.php(282): CController->run('')
+#13 Z:\home\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('referral/dashbo...')
+#14 Z:\home\yiiblog\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 Z:\home\yiiblog\www\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=referral/dashboard
+HTTP_REFERER=http://yiiblog/index.php?r=referral/login
+---
+2013/11/23 16:12:23 [error] [exception.CHttpException.403] exception 'CHttpException' in Z:\home\yiiblog\protected\modules\referral\controllers\DashboardController.php:30
+Stack trace:
+#0 Z:\home\yiiblog\framework\web\actions\CInlineAction.php(49): DashboardController->actionIndex()
+#1 Z:\home\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 Z:\home\yiiblog\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#3 Z:\home\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 Z:\home\yiiblog\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 Z:\home\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 Z:\home\yiiblog\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 Z:\home\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#8 Z:\home\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 Z:\home\yiiblog\framework\web\CWebApplication.php(282): CController->run('')
+#10 Z:\home\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('referral/dashbo...')
+#11 Z:\home\yiiblog\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 Z:\home\yiiblog\www\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/index.php?r=referral/dashboard
+HTTP_REFERER=http://yiiblog/index.php?r=referral/login
+---
+2013/11/23 16:13:22 [error] [exception.CHttpException.403] exception 'CHttpException' in Z:\home\yiiblog\protected\modules\referral\controllers\DashboardController.php:26
+Stack trace:
+#0 Z:\home\yiiblog\framework\web\actions\CInlineAction.php(49): DashboardController->actionIndex()
+#1 Z:\home\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 Z:\home\yiiblog\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#3 Z:\home\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 Z:\home\yiiblog\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 Z:\home\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 Z:\home\yiiblog\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 Z:\home\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#8 Z:\home\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 Z:\home\yiiblog\framework\web\CWebApplication.php(282): CController->run('')
+#10 Z:\home\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('referral/dashbo...')
+#11 Z:\home\yiiblog\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 Z:\home\yiiblog\www\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/index.php?r=referral/dashboard&user_id=3
+---
+2013/11/23 16:13:43 [error] [exception.CHttpException.403] exception 'CHttpException' in Z:\home\yiiblog\protected\modules\referral\controllers\DashboardController.php:26
+Stack trace:
+#0 Z:\home\yiiblog\framework\web\actions\CInlineAction.php(49): DashboardController->actionIndex()
+#1 Z:\home\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 Z:\home\yiiblog\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#3 Z:\home\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 Z:\home\yiiblog\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 Z:\home\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 Z:\home\yiiblog\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 Z:\home\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#8 Z:\home\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 Z:\home\yiiblog\framework\web\CWebApplication.php(282): CController->run('')
+#10 Z:\home\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('referral/dashbo...')
+#11 Z:\home\yiiblog\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 Z:\home\yiiblog\www\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/index.php?r=referral/dashboard&user_id=4
+HTTP_REFERER=http://yiiblog/index.php?r=referral/dashboard
+---
+2013/11/23 16:16:33 [error] [exception.CHttpException.403] exception 'CHttpException' in Z:\home\yiiblog\protected\modules\referral\controllers\DashboardController.php:26
+Stack trace:
+#0 Z:\home\yiiblog\framework\web\actions\CInlineAction.php(49): DashboardController->actionIndex()
+#1 Z:\home\yiiblog\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 Z:\home\yiiblog\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#3 Z:\home\yiiblog\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 Z:\home\yiiblog\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 Z:\home\yiiblog\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 Z:\home\yiiblog\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 Z:\home\yiiblog\framework\web\CController.php(291): CFilterChain->run()
+#8 Z:\home\yiiblog\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 Z:\home\yiiblog\framework\web\CWebApplication.php(282): CController->run('')
+#10 Z:\home\yiiblog\framework\web\CWebApplication.php(141): CWebApplication->runController('referral/dashbo...')
+#11 Z:\home\yiiblog\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 Z:\home\yiiblog\www\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/index.php?r=referral/dashboard&user_id=3
+---
+2013/11/24 15:14:32 [error] [exception.CHttpException.403] exception 'CHttpException' in /home/u329879/v.venta-group.ru/protected/modules/referral/controllers/DashboardController.php:55
+Stack trace:
+#0 /home/u329879/v.venta-group.ru/protected/modules/referral/controllers/DashboardController.php(20): DashboardController->getUserModel()
+#1 /home/u329879/v.venta-group.ru/framework/web/actions/CInlineAction.php(49): DashboardController->actionIndex()
+#2 /home/u329879/v.venta-group.ru/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /home/u329879/v.venta-group.ru/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 /home/u329879/v.venta-group.ru/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /home/u329879/v.venta-group.ru/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 /home/u329879/v.venta-group.ru/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 /home/u329879/v.venta-group.ru/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 /home/u329879/v.venta-group.ru/framework/web/CController.php(291): CFilterChain->run()
+#9 /home/u329879/v.venta-group.ru/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/u329879/v.venta-group.ru/framework/web/CWebApplication.php(282): CController->run('')
+#11 /home/u329879/v.venta-group.ru/framework/web/CWebApplication.php(141): CWebApplication->runController('referral/dashbo...')
+#12 /home/u329879/v.venta-group.ru/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#13 /home/u329879/v.venta-group.ru/www/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/referral/dashboard?user_id=2
+---
+2013/11/24 17:26:35 [error] [exception.CHttpException.403] exception 'CHttpException' in /home/u329879/v.venta-group.ru/protected/modules/referral/controllers/DashboardController.php:76
+Stack trace:
+#0 /home/u329879/v.venta-group.ru/protected/modules/referral/controllers/DashboardController.php(46): DashboardController->getUserModel()
+#1 /home/u329879/v.venta-group.ru/framework/web/actions/CInlineAction.php(49): DashboardController->actionDays()
+#2 /home/u329879/v.venta-group.ru/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /home/u329879/v.venta-group.ru/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 /home/u329879/v.venta-group.ru/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /home/u329879/v.venta-group.ru/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 /home/u329879/v.venta-group.ru/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 /home/u329879/v.venta-group.ru/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 /home/u329879/v.venta-group.ru/framework/web/CController.php(291): CFilterChain->run()
+#9 /home/u329879/v.venta-group.ru/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/u329879/v.venta-group.ru/framework/web/CWebApplication.php(282): CController->run('days')
+#11 /home/u329879/v.venta-group.ru/framework/web/CWebApplication.php(141): CWebApplication->runController('referral/dashbo...')
+#12 /home/u329879/v.venta-group.ru/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#13 /home/u329879/v.venta-group.ru/www/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/referral/dashboard/days/user_id/2
+HTTP_REFERER=http://v.venta-group.ru/referral/dashboard
+---
+2013/11/24 17:27:41 [error] [exception.CHttpException.403] exception 'CHttpException' in /home/u329879/v.venta-group.ru/protected/modules/referral/controllers/DashboardController.php:76
+Stack trace:
+#0 /home/u329879/v.venta-group.ru/protected/modules/referral/controllers/DashboardController.php(46): DashboardController->getUserModel()
+#1 /home/u329879/v.venta-group.ru/framework/web/actions/CInlineAction.php(49): DashboardController->actionDays()
+#2 /home/u329879/v.venta-group.ru/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /home/u329879/v.venta-group.ru/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 /home/u329879/v.venta-group.ru/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /home/u329879/v.venta-group.ru/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 /home/u329879/v.venta-group.ru/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 /home/u329879/v.venta-group.ru/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 /home/u329879/v.venta-group.ru/framework/web/CController.php(291): CFilterChain->run()
+#9 /home/u329879/v.venta-group.ru/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/u329879/v.venta-group.ru/framework/web/CWebApplication.php(282): CController->run('days')
+#11 /home/u329879/v.venta-group.ru/framework/web/CWebApplication.php(141): CWebApplication->runController('referral/dashbo...')
+#12 /home/u329879/v.venta-group.ru/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#13 /home/u329879/v.venta-group.ru/www/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/referral/dashboard/days/user_id/2
+HTTP_REFERER=http://v.venta-group.ru/referral/dashboard
+---
+2013/11/24 17:28:38 [error] [exception.CHttpException.403] exception 'CHttpException' in /home/u329879/v.venta-group.ru/protected/modules/referral/controllers/DashboardController.php:76
+Stack trace:
+#0 /home/u329879/v.venta-group.ru/protected/modules/referral/controllers/DashboardController.php(46): DashboardController->getUserModel()
+#1 /home/u329879/v.venta-group.ru/framework/web/actions/CInlineAction.php(49): DashboardController->actionDays()
+#2 /home/u329879/v.venta-group.ru/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /home/u329879/v.venta-group.ru/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 /home/u329879/v.venta-group.ru/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /home/u329879/v.venta-group.ru/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 /home/u329879/v.venta-group.ru/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 /home/u329879/v.venta-group.ru/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 /home/u329879/v.venta-group.ru/framework/web/CController.php(291): CFilterChain->run()
+#9 /home/u329879/v.venta-group.ru/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/u329879/v.venta-group.ru/framework/web/CWebApplication.php(282): CController->run('days')
+#11 /home/u329879/v.venta-group.ru/framework/web/CWebApplication.php(141): CWebApplication->runController('referral/dashbo...')
+#12 /home/u329879/v.venta-group.ru/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#13 /home/u329879/v.venta-group.ru/www/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/referral/dashboard/days/user_id/3
+---
+2013/11/24 17:30:23 [error] [exception.CHttpException.403] exception 'CHttpException' in /home/u329879/v.venta-group.ru/protected/modules/referral/controllers/DashboardController.php:76
+Stack trace:
+#0 /home/u329879/v.venta-group.ru/protected/modules/referral/controllers/DashboardController.php(20): DashboardController->getUserModel()
+#1 /home/u329879/v.venta-group.ru/framework/web/actions/CInlineAction.php(49): DashboardController->actionIndex()
+#2 /home/u329879/v.venta-group.ru/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /home/u329879/v.venta-group.ru/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 /home/u329879/v.venta-group.ru/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /home/u329879/v.venta-group.ru/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 /home/u329879/v.venta-group.ru/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 /home/u329879/v.venta-group.ru/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 /home/u329879/v.venta-group.ru/framework/web/CController.php(291): CFilterChain->run()
+#9 /home/u329879/v.venta-group.ru/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/u329879/v.venta-group.ru/framework/web/CWebApplication.php(282): CController->run('')
+#11 /home/u329879/v.venta-group.ru/framework/web/CWebApplication.php(141): CWebApplication->runController('referral/dashbo...')
+#12 /home/u329879/v.venta-group.ru/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#13 /home/u329879/v.venta-group.ru/www/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/referral/dashboard?user_id=2
+---
+2013/11/24 17:32:05 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "DashboardController.returnUrl".' in /home/u329879/v.venta-group.ru/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/u329879/v.venta-group.ru/www/themes/bootstrap/views/referral/dashboard/days.php(44): CComponent->__get('returnUrl')
+#1 /home/u329879/v.venta-group.ru/framework/web/CBaseController.php(126): require('/home/u329879/v...')
+#2 /home/u329879/v.venta-group.ru/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/u329879/v...', Array, true)
+#3 /home/u329879/v.venta-group.ru/framework/web/CController.php(869): CBaseController->renderFile('/home/u329879/v...', Array, true)
+#4 /home/u329879/v.venta-group.ru/framework/web/CController.php(782): CController->renderPartial('days', Array, true)
+#5 /home/u329879/v.venta-group.ru/protected/modules/referral/controllers/DashboardController.php(63): CController->render('days', Array)
+#6 /home/u329879/v.venta-group.ru/framework/web/actions/CInlineAction.php(49): DashboardController->actionDays()
+#7 /home/u329879/v.venta-group.ru/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /home/u329879/v.venta-group.ru/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /home/u329879/v.venta-group.ru/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /home/u329879/v.venta-group.ru/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /home/u329879/v.venta-group.ru/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /home/u329879/v.venta-group.ru/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /home/u329879/v.venta-group.ru/framework/web/CController.php(291): CFilterChain->run()
+#14 /home/u329879/v.venta-group.ru/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /home/u329879/v.venta-group.ru/framework/web/CWebApplication.php(282): CController->run('days')
+#16 /home/u329879/v.venta-group.ru/framework/web/CWebApplication.php(141): CWebApplication->runController('referral/dashbo...')
+#17 /home/u329879/v.venta-group.ru/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#18 /home/u329879/v.venta-group.ru/www/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/referral/dashboard/days/user_id/4
+HTTP_REFERER=http://v.venta-group.ru/referral/dashboard/days/user_id/2
+---
